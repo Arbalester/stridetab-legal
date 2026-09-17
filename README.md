@@ -2,6 +2,11 @@
 
 Static GitHub Pages site for the StrideTab landing page, Terms of Service and Privacy Policy.
 
+- Landing page: `https://arbalester.github.io/stridetab-legal/`
+- Product preview: `https://arbalester.github.io/stridetab-legal/preview.html`
+- Privacy Policy: `https://arbalester.github.io/stridetab-legal/privacy.html`
+- Terms of Service: `https://arbalester.github.io/stridetab-legal/terms.html`
+
 ## Publish with GitHub Pages
 
 1. Create a public repository named `stridetab-legal`.

@@ -13,6 +13,7 @@
       <a class="wordmark" href="index.html" aria-label="StrideTab home"><span class="mark">ST</span><span>StrideTab</span></a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#features">Features</a>
+        <a href="#widgets">Widgets</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a class="nav-cta" href="https://github.com/Arbalester/chrome-extention-start-page-2024">View source <span aria-hidden="true">↗</span></a>
@@ -27,25 +28,30 @@
           <p class="hero-lede">StrideTab turns a new tab into a quiet workspace for the things you actually need: time, tasks, links and a little less distraction.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="https://github.com/Arbalester/chrome-extention-start-page-2024">Explore the project <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="privacy.html">Read the privacy policy <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#widgets">See the widgets <span aria-hidden="true">→</span></a>
           </div>
           <p class="micro-copy">Local-first by default · Works without an account</p>
         </div>
-        <div class="hero-visual" aria-label="Abstract preview of the StrideTab workspace" role="img">
+        <div class="hero-visual" aria-label="Preview of the StrideTab new tab screen" role="img">
           <div class="sun-orbit orbit-one"></div>
           <div class="sun-orbit orbit-two"></div>
-          <div class="preview-window">
-            <div class="preview-topline"><span class="preview-logo">ST</span><span class="preview-time">09:41</span><span class="preview-menu">•••</span></div>
-            <div class="preview-date">Tuesday, September 17</div>
-            <div class="preview-search"><span class="search-icon">⌕</span><span>Search the web</span><span class="search-key">⌘ K</span></div>
-            <div class="preview-grid">
-              <div class="preview-card clock-card"><small>GOOD MORNING</small><strong>09<span>:</span>41</strong><span class="weather">Clear · 19°</span></div>
-              <div class="preview-card task-card"><small>TODAY</small><span class="task done"><i>✓</i> Plan the day</span><span class="task"><i></i> Make space for focus</span><span class="task"><i></i> Take a proper break</span></div>
-              <div class="preview-card link-card"><small>QUICK LINKS</small><div class="link-row"><span>Docs</span><span>Calendar</span><span>Notes</span></div></div>
+          <div class="preview-window app-preview">
+            <div class="app-topbar">
+              <span class="focus-control"><i class="mini-switch"></i> Focus mode</span>
+              <div class="app-tabs"><span class="app-tab is-active">Home</span><span class="app-tab">Work</span><span class="app-tab app-tab-icon">Layers</span><span class="app-tab app-tab-icon">Settings</span></div>
             </div>
+            <div class="app-canvas">
+              <div class="preview-card app-card tasks-card"><small>TASKS</small><span class="card-add">+</span><span class="empty-state">Nothing to do</span><span class="card-action">Add Task</span></div>
+              <div class="preview-card app-card weather-card"><small>WEATHER</small><span class="weather-location">Current location</span><span class="weather-error">Weather is temporarily unavailable.</span><span class="card-action">Reload</span></div>
+              <div class="preview-clock"><strong>17<span>:</span>40</strong><span>Thu, 17.09.2026</span></div>
+              <div class="preview-search"><span class="search-icon"></span><span>Search Google</span><span class="search-submit" aria-hidden="true"></span></div>
+              <div class="preview-card app-card timer-card"><small>TIMER</small><strong>25:00</strong><span class="timer-actions">Start &nbsp;&nbsp; Reset</span></div>
+              <div class="preview-card app-card quick-links-card"><small>QUICK LINKS</small><div class="link-row"><span>+ Add link</span><span>Open space</span><span>Daily plan</span></div></div>
+            </div>
+            <div class="app-rail" aria-hidden="true"><span class="rail-icon rail-icon-block"></span><span class="rail-icon rail-icon-timer"></span><span class="rail-icon rail-icon-settings"></span></div>
           </div>
-          <span class="float-label label-focus">focus mode <b>⌁</b></span>
-          <span class="float-label label-local">local by default <b>●</b></span>
+          <span class="float-label label-focus">default screen <b class="badge-dot"></b></span>
+          <span class="float-label label-local">local by default <b class="badge-dot"></b></span>
         </div>
       </section>
 
@@ -53,8 +59,42 @@
         <div class="section-intro"><p class="eyebrow">Less noise, more signal</p><h2>Built for the first<br />minute of your day.</h2></div>
         <div class="feature-grid">
           <article class="feature-card feature-wide"><span class="feature-number">01</span><div><h3>Shape your space</h3><p>Arrange clocks, tasks, weather, bookmarks and quick links into a workspace that feels like yours.</p></div><div class="mini-layout"><span></span><span></span><span></span><span></span><span></span></div></article>
-          <article class="feature-card"><span class="feature-number">02</span><h3>Keep focus close</h3><p>Pomodoro and focus mode help you protect attention without turning your browser into a fortress.</p><span class="feature-glyph">◌</span></article>
-          <article class="feature-card"><span class="feature-number">03</span><h3>Start local</h3><p>Your everyday workspace stays on your device. Cloud features are optional, never a prerequisite.</p><span class="feature-glyph">⌂</span></article>
+          <article class="feature-card"><span class="feature-number">02</span><h3>Keep focus close</h3><p>Pomodoro and focus mode help you protect attention without turning your browser into a fortress.</p><span class="feature-glyph feature-glyph-focus" aria-hidden="true"></span></article>
+          <article class="feature-card"><span class="feature-number">03</span><h3>Start local</h3><p>Your everyday workspace stays on your device. Cloud features are optional, never a prerequisite.</p><span class="feature-glyph feature-glyph-local" aria-hidden="true"></span></article>
+        </div>
+      </section>
+
+      <section id="widgets" class="section-wrap widget-section">
+        <div class="section-intro"><p class="eyebrow">The widget shelf</p><h2>Useful pieces,<br /><em>already in reach.</em></h2></div>
+        <div class="widget-list">
+          <div class="widget-group">
+            <div class="widget-group-heading"><strong>Core widgets</strong><span>Ready from the first tab</span></div>
+            <ul>
+              <li><strong>Clock &amp; date</strong><span>Time zones, date formats and a calm center of gravity.</span><b>Core</b></li>
+              <li><strong>Google search</strong><span>Search the web without leaving your workspace.</span><b>Core</b></li>
+              <li><strong>Quick links</strong><span>Your frequently visited places, one click away.</span><b>Core</b></li>
+              <li><strong>Tasks</strong><span>Keep the next few actions visible and lightweight.</span><b>Core</b></li>
+              <li><strong>Weather</strong><span>Current conditions and a forecast at a glance.</span><b>Core</b></li>
+              <li><strong>Timer</strong><span>A small, focused timer for the work in front of you.</span><b>Core</b></li>
+              <li><strong>Bookmarks</strong><span>Bring your browser bookmarks into the same canvas.</span><b>Core</b></li>
+              <li><strong>Notes</strong><span>Keep a short thought or reminder close by.</span><b>Core</b></li>
+              <li><strong>Day planner</strong><span>Turn today into a simple, visual plan.</span><b>Core</b></li>
+            </ul>
+          </div>
+          <div class="widget-group widget-group-pro">
+            <div class="widget-group-heading"><strong>Pro widgets</strong><span>For a deeper daily system</span></div>
+            <ul>
+              <li><strong>Task manager</strong><span>Organize work across backlog, progress and done.</span><b>Pro</b></li>
+              <li><strong>Calendar</strong><span>See the month while you shape the day.</span><b>Pro</b></li>
+              <li><strong>Daily quote</strong><span>Begin with a small prompt for a bigger day.</span><b>Pro</b></li>
+              <li><strong>Habit tracker</strong><span>Make consistency visible without making it noisy.</span><b>Pro</b></li>
+              <li><strong>Goals</strong><span>Keep the bigger direction within sight.</span><b>Pro</b></li>
+              <li><strong>Eisenhower matrix</strong><span>Sort the important from the merely urgent.</span><b>Pro</b></li>
+              <li><strong>Reading list</strong><span>Save the things worth returning to.</span><b>Pro</b></li>
+              <li><strong>Mood tracker</strong><span>Notice patterns in how your days feel.</span><b>Pro</b></li>
+              <li><strong>RSS news &amp; finance</strong><span>Bring selected signals into one quiet place.</span><b>Pro</b></li>
+            </ul>
+          </div>
         </div>
       </section>
 
