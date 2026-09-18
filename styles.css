@@ -231,7 +231,9 @@ h3 { font-size: 20px; line-height: 1.1; }
 .rail-circle { border: 2px solid currentColor; border-radius: 50%; }
 .rail-gear { border: 2px solid currentColor; border-radius: 50%; }
 .rail-gear::after { position: absolute; inset: 3px; content: ""; border: 1px solid currentColor; border-radius: 50%; }
-.product-caption { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 40px; padding: 0 15px; color: var(--faint); background: #0a1725; font-size: 11px; }
+.product-shell-real { margin: 0; }
+.product-shot { display: block; width: 100%; height: auto; background: var(--app-blue-1); }
+.product-caption { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 0 15px; color: var(--faint); background: #0a1725; font-size: 11px; }
 .visual-note { margin: 13px 0 0; color: var(--faint); font-size: 11px; }
 .proof-strip { display: grid; grid-template-columns: repeat(4, 1fr); padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 .proof-strip span + span { padding-left: 22px; border-left: 1px solid var(--line); }
